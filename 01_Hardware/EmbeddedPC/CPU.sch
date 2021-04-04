@@ -468,8 +468,8 @@ $Comp
 L Memory_RAM:AS4C4M16SA U4
 U 1 1 60662CA1
 P 9150 3300
-F 0 "U4" H 9150 4781 50  0000 C CNN
-F 1 "AS4C16M16SA" H 9150 4690 50  0000 C CNN
+F 0 "U4" H 9700 4750 50  0000 C CNN
+F 1 "AS4C16M16SA" H 9700 4850 50  0000 C CNN
 F 2 "TSOPII-54" H 9150 3300 50  0001 C CIN
 F 3 "https://www.mouser.ch/datasheet/2/12/256Mb-AS4C16M16SA-C_I_V3.0_March%202015-1265232.pdf" H 9150 3050 50  0001 C CNN
 	1    9150 3300
@@ -590,18 +590,14 @@ Wire Wire Line
 $Comp
 L Connector:SD_Card J3
 U 1 1 6074773D
-P 8900 5900
-F 0 "J3" H 8900 6565 50  0000 C CNN
-F 1 "SD_Card" H 8900 6474 50  0000 C CNN
-F 2 "" H 8900 5900 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 8900 5900 50  0001 C CNN
-	1    8900 5900
+P 9150 6050
+F 0 "J3" H 9150 6715 50  0000 C CNN
+F 1 "SD_Card" H 9150 6624 50  0000 C CNN
+F 2 "" H 9150 6050 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 9150 6050 50  0001 C CNN
+	1    9150 6050
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	8100 2350 8100 3600
-Wire Bus Line
-	10150 2350 10150 3950
 $Comp
 L Memory_Flash:AT25SF081-XMHD-X U5
 U 1 1 60652BE3
@@ -613,4 +609,262 @@ F 3 "file:///C:/Users/marce/Downloads/TH58CVG3S0HRAIJ_datasheet_en_20191001.pdf"
 	1    13000 5650
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 606A8C97
+P 9150 4750
+F 0 "#PWR?" H 9150 4500 50  0001 C CNN
+F 1 "GND" H 9155 4577 50  0000 C CNN
+F 2 "" H 9150 4750 50  0001 C CNN
+F 3 "" H 9150 4750 50  0001 C CNN
+	1    9150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4750 9150 4650
+Wire Wire Line
+	8850 4600 8850 4650
+Wire Wire Line
+	8850 4650 8950 4650
+Wire Wire Line
+	9150 4650 9250 4650
+Wire Wire Line
+	9450 4650 9450 4600
+Connection ~ 9150 4650
+Wire Wire Line
+	8950 4600 8950 4650
+Connection ~ 8950 4650
+Wire Wire Line
+	8950 4650 9050 4650
+Wire Wire Line
+	9050 4600 9050 4650
+Connection ~ 9050 4650
+Wire Wire Line
+	9050 4650 9150 4650
+Wire Wire Line
+	9150 4600 9150 4650
+Wire Wire Line
+	9250 4600 9250 4650
+Connection ~ 9250 4650
+Wire Wire Line
+	9250 4650 9350 4650
+Wire Wire Line
+	9350 4600 9350 4650
+Connection ~ 9350 4650
+Wire Wire Line
+	9350 4650 9450 4650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 606C9599
+P 9150 1800
+F 0 "#PWR?" H 9150 1650 50  0001 C CNN
+F 1 "+3.3V" H 9165 1973 50  0000 C CNN
+F 2 "" H 9150 1800 50  0001 C CNN
+F 3 "" H 9150 1800 50  0001 C CNN
+	1    9150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1800 9150 1900
+Wire Wire Line
+	8850 2000 8850 1900
+Wire Wire Line
+	8850 1900 8950 1900
+Connection ~ 9150 1900
+Wire Wire Line
+	9150 1900 9150 2000
+Wire Wire Line
+	9150 1900 9250 1900
+Wire Wire Line
+	9450 1900 9450 2000
+Wire Wire Line
+	9350 2000 9350 1900
+Connection ~ 9350 1900
+Wire Wire Line
+	9350 1900 9450 1900
+Wire Wire Line
+	9250 2000 9250 1900
+Connection ~ 9250 1900
+Wire Wire Line
+	9250 1900 9350 1900
+Wire Wire Line
+	9050 2000 9050 1900
+Connection ~ 9050 1900
+Wire Wire Line
+	9050 1900 9150 1900
+Wire Wire Line
+	8950 2000 8950 1900
+Connection ~ 8950 1900
+Wire Wire Line
+	8950 1900 9050 1900
+Wire Wire Line
+	7950 1000 7950 900 
+$Comp
+L Device:C C?
+U 1 1 606FD7B1
+P 7950 1150
+F 0 "C?" H 8000 1300 50  0000 L CNN
+F 1 "100n" H 8000 1000 50  0000 L CNN
+F 2 "" H 7988 1000 50  0001 C CNN
+F 3 "~" H 7950 1150 50  0001 C CNN
+	1    7950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1300 7950 1400
+$Comp
+L Device:C C?
+U 1 1 606FD7B8
+P 9450 1150
+F 0 "C?" H 9500 1300 50  0000 L CNN
+F 1 "100n" H 9500 1000 50  0000 L CNN
+F 2 "" H 9488 1000 50  0001 C CNN
+F 3 "~" H 9450 1150 50  0001 C CNN
+	1    9450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 606FD7BE
+P 9150 1150
+F 0 "C?" H 9200 1300 50  0000 L CNN
+F 1 "100n" H 9200 1000 50  0000 L CNN
+F 2 "" H 9188 1000 50  0001 C CNN
+F 3 "~" H 9150 1150 50  0001 C CNN
+	1    9150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 606FD7C4
+P 8850 1150
+F 0 "C?" H 8900 1300 50  0000 L CNN
+F 1 "100n" H 8900 1000 50  0000 L CNN
+F 2 "" H 8888 1000 50  0001 C CNN
+F 3 "~" H 8850 1150 50  0001 C CNN
+	1    8850 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 606FD7CA
+P 8550 1150
+F 0 "C?" H 8600 1300 50  0000 L CNN
+F 1 "100n" H 8600 1000 50  0000 L CNN
+F 2 "" H 8588 1000 50  0001 C CNN
+F 3 "~" H 8550 1150 50  0001 C CNN
+	1    8550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 606FD7D0
+P 8250 1150
+F 0 "C?" H 8300 1300 50  0000 L CNN
+F 1 "100n" H 8300 1000 50  0000 L CNN
+F 2 "" H 8288 1000 50  0001 C CNN
+F 3 "~" H 8250 1150 50  0001 C CNN
+	1    8250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 900  8550 900 
+Wire Wire Line
+	8550 1500 8550 1400
+$Comp
+L power:GND #PWR?
+U 1 1 606FD7D8
+P 8550 1500
+F 0 "#PWR?" H 8550 1250 50  0001 C CNN
+F 1 "GND" H 8555 1327 50  0000 C CNN
+F 2 "" H 8550 1500 50  0001 C CNN
+F 3 "" H 8550 1500 50  0001 C CNN
+	1    8550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1400 9450 1400
+Connection ~ 9150 1400
+Wire Wire Line
+	9150 1300 9150 1400
+Wire Wire Line
+	8850 1400 9150 1400
+Connection ~ 8850 1400
+Wire Wire Line
+	8850 1300 8850 1400
+Wire Wire Line
+	8550 1400 8850 1400
+Connection ~ 8550 1400
+Wire Wire Line
+	8550 1300 8550 1400
+Wire Wire Line
+	8250 1400 8550 1400
+Connection ~ 8250 1400
+Wire Wire Line
+	8250 1300 8250 1400
+Wire Wire Line
+	9450 1400 9450 1300
+Wire Wire Line
+	7950 1400 8250 1400
+Wire Wire Line
+	7950 900  8250 900 
+Wire Wire Line
+	8550 900  8850 900 
+Wire Wire Line
+	8850 900  9150 900 
+Connection ~ 9150 900 
+Wire Wire Line
+	9450 900  9150 900 
+Wire Wire Line
+	9450 1000 9450 900 
+Wire Wire Line
+	8550 800  8550 900 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 606FD7F3
+P 8550 800
+F 0 "#PWR?" H 8550 650 50  0001 C CNN
+F 1 "+3.3V" H 8565 973 50  0000 C CNN
+F 2 "" H 8550 800 50  0001 C CNN
+F 3 "" H 8550 800 50  0001 C CNN
+	1    8550 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 8550 900 
+Connection ~ 8250 900 
+Wire Wire Line
+	8250 1000 8250 900 
+Wire Wire Line
+	8550 1000 8550 900 
+Connection ~ 8850 900 
+Wire Wire Line
+	8850 1000 8850 900 
+Wire Wire Line
+	9150 900  9150 1000
+Wire Wire Line
+	8250 5650 7900 5650
+Wire Wire Line
+	8250 5750 7900 5750
+Wire Wire Line
+	8250 5850 7900 5850
+Wire Wire Line
+	8250 5950 7900 5950
+Wire Wire Line
+	8250 6050 7900 6050
+Wire Wire Line
+	8250 6150 7900 6150
+Wire Wire Line
+	8250 6250 7900 6250
+Wire Wire Line
+	8250 6350 7900 6350
+Wire Wire Line
+	8250 6450 7900 6450
+Wire Wire Line
+	10400 5850 10050 5850
+Wire Wire Line
+	10400 5950 10050 5950
+Wire Bus Line
+	8100 2350 8100 3600
+Wire Bus Line
+	10150 2350 10150 3950
 $EndSCHEMATC
